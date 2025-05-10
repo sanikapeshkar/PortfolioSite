@@ -1,0 +1,58 @@
+.stepper-sidebar {
+  margin:0rem 4rem 0rem 0rem;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+}
+
+.stepper-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.stepper-bullet-icon {
+  width: 14px;
+  height: 14px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.stepper-item.active .stepper-bullet-icon {
+  background-color: #007bff;
+}
+.stepper-item.active .stepper-label {
+  opacity: 1;
+  transform: translateY(-50%) translateX(5px);
+}
+.stepper-label {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.stepper-item:hover .stepper-label {
+  opacity: 1;
+  transform: translateY(-50%) translateX(5px);
+}
+

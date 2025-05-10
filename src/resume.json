@@ -1,0 +1,21 @@
+{
+    "details":{
+      "tagline":"Creating some thi",
+        "name": "Sanika Peshkar",
+        "title": "Full Stack Developer",
+        "contact": {
+          "email": "john@example.com",
+          "phone": "+1 123 456 7890"
+        }
+    },
+   
+    "skills": ["JavaScript", "React", "Node.js"],
+    "experience": [
+      {
+        "company": "TechCorp",
+        "title": "Senior Developer",
+        "start": "2021-01",
+        "end": "2024-05"
+      }
+    ]
+  }
